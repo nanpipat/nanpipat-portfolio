@@ -32,7 +32,7 @@ RobotContainer.displayName = 'RobotContainer';
 const Loader = () => {
   return (
     <RobotContainer>
-      <RobotSpinner />
+      {/* <RobotSpinner /> */}
     </RobotContainer>
   )
 }
