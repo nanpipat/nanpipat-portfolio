@@ -101,6 +101,8 @@ const VoxelDog = () => {
 
       const loader = new GLTFLoader()
 
+      let req = null
+
       // setLoading(false)
       loader.load(
         '/untitled.gltf',
@@ -127,10 +129,13 @@ const VoxelDog = () => {
             })
         },
         (xhr) => {
+          // console.log(xhr, xhr.loaded, xhr.total, (xhr.loaded / xhr.total) * 100 + '% loaded')
+          if (req !== null) {
+            console.log('cancelAnimationFrame', req)
+            cancelAnimationFrame(req)  
+          }
           setLoading(false)
           animate()
-
-
         },
         (error) => {
           console.log(error)
@@ -146,7 +151,6 @@ const VoxelDog = () => {
       //   setLoading(false)
       // })
 
-      let req = null
       let frame = 0
       const animate = () => {
         req = requestAnimationFrame(animate)
@@ -155,7 +159,7 @@ const VoxelDog = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 1
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 10
 
           camera.position.y = 10
           camera.position.x =
@@ -168,6 +172,7 @@ const VoxelDog = () => {
         }
 
         var delta = clock.getDelta(); // clock is an instance of THREE.Clock
+
         if ( mixer ) mixer.update( delta );
 
         renderer.render(scene, camera)
