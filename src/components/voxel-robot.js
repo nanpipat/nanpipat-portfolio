@@ -131,7 +131,7 @@ const VoxelDog = () => {
         (xhr) => {
           // console.log(xhr, xhr.loaded, xhr.total, (xhr.loaded / xhr.total) * 100 + '% loaded')
           if (req !== null) {
-            console.log('cancelAnimationFrame', req)
+            // console.log('cancelAnimationFrame', req)
             cancelAnimationFrame(req)  
           }
           setLoading(false)
