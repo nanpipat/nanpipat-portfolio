@@ -24,7 +24,6 @@ export function loadFXLModel(
 
                 //Playing Animation
                 mixer = new THREE.AnimationMixer(obj);
-                console.log(gltf.animations)
                 gltf.animations.forEach((clip) => {
                     mixer.clipAction(clip).play();
                 })
@@ -32,7 +31,6 @@ export function loadFXLModel(
                 clock = new THREE.Clock();
 
                 if (mixer !== undefined) {
-                    console.log(mixer,)
                     mixer.update(clock.getDelta())
                 }
 

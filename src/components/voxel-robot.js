@@ -82,7 +82,7 @@ const VoxelDog = () => {
       // scene.add(dirLight);
       // scene.add(new THREE.DirectionalLightHelper(dirLight, 10));
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 5)
       scene.add(ambientLight)
 
       // const light = new THREE.PointLight(0xffffff, 1, 100);
@@ -105,7 +105,6 @@ const VoxelDog = () => {
       loader.load(
         '/untitled.gltf',
         (gltf) => {
-          console.log(gltf, "GLTF")
           var model = gltf.scene;
           var animations = gltf.animations;
 
@@ -128,7 +127,6 @@ const VoxelDog = () => {
             })
         },
         (xhr) => {
-          console.log((xhr.loaded / xhr.total) * 100 + '% loaded','1')
           setLoading(false)
           animate()
 
