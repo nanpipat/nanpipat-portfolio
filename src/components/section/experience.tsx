@@ -18,68 +18,106 @@ import {
 const ExperienceSection = () => {
     return (
         <>
-            <Grid my={4} templateColumns="repeat(5,  1fr)">
-                <GridItem colSpan={[2,1,1]}>
+            <Grid my={4} templateColumns="repeat(5, 1fr)">
+                <GridItem colSpan={[2, 1, 1]}>
                     <Text fontWeight="bold" mr={2}>
                         Finema
                     </Text>
                     <Text fontSize="smaller" color="teal">
-                        (2022 - Present)
+                        Lead Software Engineer
+                    </Text>
+                    <Text fontSize="smaller" color="gray.500">
+                        (2025 - Present)
                     </Text>
                 </GridItem>
-                <GridItem colSpan={[3,4,4]}>
+                <GridItem colSpan={[3, 4, 4]}>
                     <Text>
-                    A senior software engineer designs, develops, and maintains software applications. They analyze requirements, write code, test for bugs, and collaborate with a team to ensure efficient and reliable software. Problem-solving, continuous learning, and effective communication are key skills in this dynamic field.
+                        Leading development and infrastructure initiatives for decentralized identity and government-related platforms.
+                        Architecting back-end systems using Golang, managing cloud infrastructure on AWS and Kubernetes,
+                        and implementing CI/CD pipelines with observability stacks.
                     </Text>
                 </GridItem>
             </Grid>
-            <Grid my={4} templateColumns="repeat(5,  1fr)">
-                <GridItem colSpan={[2,1,1]}>
+            <Grid my={4} templateColumns="repeat(5, 1fr)">
+                <GridItem colSpan={[2, 1, 1]}>
+                    <Text fontWeight="bold" mr={2}>
+                        True Digital Group
+                    </Text>
+                    <Text fontSize="smaller" color="teal">
+                        Senior Associate Software Engineer
+                    </Text>
+                    <Text fontSize="smaller" color="gray.500">
+                        (2024 - 2025)
+                    </Text>
+                </GridItem>
+                <GridItem colSpan={[3, 4, 4]}>
+                    <Text>
+                        Developed and maintained web applications, web APIs, and projects related to government and decentralized identity platforms.
+                        Participated in designing high availability system architecture and collaborating with cross-functional teams.
+                    </Text>
+                </GridItem>
+            </Grid>
+            <Grid my={4} templateColumns="repeat(5, 1fr)">
+                <GridItem colSpan={[2, 1, 1]}>
+                    <Text fontWeight="bold" mr={2}>
+                        Finema
+                    </Text>
+                    <Text fontSize="smaller" color="teal">
+                        Senior Software Engineer
+                    </Text>
+                    <Text fontSize="smaller" color="gray.500">
+                        (2022 - 2024)
+                    </Text>
+                </GridItem>
+                <GridItem colSpan={[3, 4, 4]}>
+                    <Text>
+                        Implemented back-end systems using Golang with best-practice architecture.
+                        Designed and managed PostgreSQL/MySQL databases. Orchestrated deployments using Kubernetes and Docker.
+                        Drove adoption of Agile/Scrum methodologies and provided technical coaching to team members.
+                    </Text>
+                </GridItem>
+            </Grid>
+            <Grid my={4} templateColumns="repeat(5, 1fr)">
+                <GridItem colSpan={[2, 1, 1]}>
                     <Text fontWeight="bold" mr={2}>
                         Studio Craftsmanship
                     </Text>
                     <Text fontSize="smaller" color="teal">
+                        Full Stack Developer
+                    </Text>
+                    <Text fontSize="smaller" color="gray.500">
                         (2021 - 2022)
                     </Text>
                 </GridItem>
-                <GridItem colSpan={[3,4,4]}>
+                <GridItem colSpan={[3, 4, 4]}>
                     <Text>
-                    E-commerce web applications. Develop for both front-end and back-end systems. Using an agile methodology system in a team.  Work at a middle level.
+                        Contributed to the development of e-commerce web applications. Developed front-end using React (Next.js)
+                        and implemented back-end systems using Go (Fiber) with hexagonal architecture.
+                        Managed PostgreSQL databases and AWS infrastructure in an Agile/Scrum environment.
                     </Text>
                 </GridItem>
             </Grid>
-            <Grid my={4} templateColumns="repeat(5,  1fr)">
-                <GridItem colSpan={[2,1,1]}>
+            <Grid my={4} templateColumns="repeat(5, 1fr)">
+                <GridItem colSpan={[2, 1, 1]}>
                     <Text fontWeight="bold" mr={2}>
-                        Netcube Soft
+                        Net Cube Soft
                     </Text>
                     <Text fontSize="smaller" color="teal">
+                        Full Stack Developer
+                    </Text>
+                    <Text fontSize="smaller" color="gray.500">
                         (2018 - 2021)
                     </Text>
                 </GridItem>
-                <GridItem colSpan={[3,4,4]}>
+                <GridItem colSpan={[3, 4, 4]}>
                     <Text>
-                        Develop software, such as website, application, system, etc. Base language in Back End is C#,.NET Core, .NET Framework and Base Front End is Angular Framework.
-                    </Text>
-                </GridItem>
-            </Grid>
-            <Grid my={4} templateColumns="repeat(5,  1fr)">
-                <GridItem colSpan={[2,1,1]}>
-                    <Text fontWeight="bold" mr={2}>
-                        Freelance
-                    </Text>
-                    <Text fontSize="smaller" color="teal">
-                        (2018 - Present)
-                    </Text>
-                </GridItem>
-                <GridItem colSpan={[3,4,4]}>
-                    <Text>
-                        Develop and Bug fixed Software , Application or Website by requirement. Don&apos;t expect language. Mostly is Web Developer
+                        Mid-level developer focused on software development and team mentoring.
+                        Developed websites and applications using C#, .NET Core, .NET Framework, and Angular.
+                        Provided technical guidance to junior developers and introduced new technologies to improve project efficiency.
                     </Text>
                 </GridItem>
             </Grid>
         </>
-
     )
 }
 
