@@ -226,7 +226,7 @@ export default function Page() {
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Image src="/images/cartoon.jpg" width={220} margin={7} />
+        <Image src="/images/cartoon.jpg" width={220} margin={7} alt="Cartoon character" />
         <Text ml={7}>love to play music.</Text>
         <Text ml={7}>love to watch the concerts.</Text>
         <Text ml={7}>and love to watch someone music performance.</Text>
