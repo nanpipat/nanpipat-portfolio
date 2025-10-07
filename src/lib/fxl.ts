@@ -1,12 +1,19 @@
 import * as THREE from 'three'
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+
+interface LoadModelOptions {
+    receiveShadow?: boolean
+    castShadow?: boolean
+}
 
 export function loadFXLModel(
-    scene,
-    glbPath,
-    options = { receiveShadow: true, castShadow: true }
-) {
-    const { receiveShadow, castShadow } = options
-    var mixer, clock
+    scene: THREE.Scene,
+    glbPath: string,
+    options: LoadModelOptions = { receiveShadow: true, castShadow: true }
+): Promise<THREE.Group> {
+    const { receiveShadow = true, castShadow = true } = options
+    let mixer: THREE.AnimationMixer
+    let clock: THREE.Clock
 
     return new Promise((resolve, reject) => {
         const loader = new GLTFLoader()
@@ -39,8 +46,8 @@ export function loadFXLModel(
 
 
 
-                obj.traverse(function (child) {
-                    if (child.isMesh) {
+                obj.traverse((child) => {
+                    if ((child as THREE.Mesh).isMesh) {
                         child.castShadow = castShadow
                         child.receiveShadow = receiveShadow
                     }
@@ -48,7 +55,7 @@ export function loadFXLModel(
                 resolve(obj)
             },
             undefined,
-            function (error) {
+            (error) => {
                 reject(error)
             }
         )

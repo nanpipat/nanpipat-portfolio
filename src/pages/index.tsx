@@ -159,15 +159,15 @@ export default function Page() {
         mb={6}
         textAlign="center"
       >
-        Hello, I&apos;m a software developer. and you can call me
-        &quot;Top&quot; ♥
+        Hello, I&apos;m a Software Engineer. and you can call me
+        &quot;Topland&quot; ♥
       </Box>
       <Box display={{ md: "flex" }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Nanpipat Klinpratoom
           </Heading>
-          <p>Full Stack Developer. </p>
+          <p>Lead Software Engineer & DevOps</p>
         </Box>
         <Box
           flexShrink={0}
@@ -192,14 +192,17 @@ export default function Page() {
           Bio
         </Heading>
         <Text>
-          I am a software developer with a vast array of knowledge in many
-          different front-end and back-end languages, responsive frameworks,
-          databases, and best code practices.
+          Lead Software Engineer and Infrastructure Specialist with strong
+          expertise in back-end development, DevOps, and cloud infrastructure.
+          Proven experience in leading teams, architecting scalable systems, and
+          driving government and enterprise projects from design to deployment.
+          Skilled in modern software engineering practices, Kubernetes
+          orchestration, and CI/CD automation.
         </Text>
         <Box textAlign="center" my={4}>
           <Link href="/doc/resume.pdf">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Dowload CV
+              Download CV
             </Button>
           </Link>
         </Box>
@@ -226,7 +229,12 @@ export default function Page() {
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Image src="/images/cartoon.jpg" width={220} margin={7} />
+        <Image
+          src="/images/cartoon.jpg"
+          width={220}
+          margin={7}
+          alt="Cartoon character"
+        />
         <Text ml={7}>love to play music.</Text>
         <Text ml={7}>love to watch the concerts.</Text>
         <Text ml={7}>and love to watch someone music performance.</Text>

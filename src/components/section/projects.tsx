@@ -53,14 +53,18 @@ const ProjectsSection = () => {
                         href="https://github.com/nanpipat"
                         demo="https://github.com/nanpipat"
                         code="https://github.com/nanpipat"
-                    />
+                    >
+                        My coding portfolio and projects
+                    </GridItemNoLive>
                     <GridItemNoLive
                         title="Medium Blogs"
                         thumbnail={medium}
                         href="https://medium.com/@nanpipat.k"
                         demo="https://medium.com/@nanpipat.k"
                         code="https://medium.com/@nanpipat.k"
-                    />
+                    >
+                        Technical articles and tutorials
+                    </GridItemNoLive>
                 </SimpleGrid>
             </Section>
             
